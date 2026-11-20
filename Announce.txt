@@ -1,0 +1,13 @@
+本次 QVHighlights 作业将在教师服务器上统一评测。请大家提交前，先用课程环境确认自己的模型能正常加载并完成推理。
+
+系统：Linux x86_64（Ubuntu 22.04）
+
+Python：3.10.8
+
+PyTorch：2.6.0+cu124（CUDA 12.4），torchvision 0.21.0
+
+核心依赖：Transformers 4.51.3、PEFT 0.15.2、Accelerate 1.6.0、bitsandbytes 0.45.5
+
+GPU：课程基线使用单张 RTX 4090 D（24 GB），但是基本上感觉单词实验10G就够了，所以可以用便宜的替代。C 任务推理需要支持 BF16 的 NVIDIA GPU。
+
+课程镜像已固定全部 58 个 Python 包的版本。使用 AutoDL 的同学可以先无卡安装并检查环境，运行 C 任务时再有卡开机。
